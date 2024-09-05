@@ -57,5 +57,13 @@ function numberOperation(){
             },1000)
        })
     })
+
+    .then(function(num6){
+        return new Promise(function(resolve){
+            const result = num6
+            document.getElementById("output").textContent = `Final Result: ${result}`
+            resolve(result)
+       })
+    })
  
 }
